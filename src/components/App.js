@@ -34,15 +34,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="main-container">
-        <div>
-          Latest Block: {this.state.blockNumber}
-        </div>
-        <div>
-          Difficulty: {this.state.difficulty}
-        </div>
-        <div>
-          Gas Price: {this.state.gasPrice}
+      <div className="app">
+        <div className="main-block">
+          <div className="block">
+            Latest Block: {this.state.blockNumber}
+          </div>
+          <div className="block">
+            Difficulty: {this.state.difficulty}
+          </div>
+          <div className="block">
+            Gas Price: {this.state.gasPrice}
+          </div>
         </div>
       </div>
     )
